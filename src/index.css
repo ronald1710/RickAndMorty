@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/Desktop.png");
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.Navbar{
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: fixed;
+ 
+}
+
+.container-inputs{
+  position: fixed;
+  top: 50px;
+  right: 15px;
+}
+
+.logo {
+ 
+  top: 50px;
+  left: 15px;
+  rotate: -25deg;
+  box-shadow: 100px, 100px, 10px, rgba(#7979795d);
+}
+
