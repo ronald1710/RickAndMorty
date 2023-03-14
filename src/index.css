@@ -5,6 +5,8 @@
 }
 
 body {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   width: 100%;
   height: 100vh;
   background-image: url("/img/Desktop.png");
@@ -35,5 +37,84 @@ body {
   left: 15px;
   rotate: -25deg;
   box-shadow: 100px, 100px, 10px, rgba(#7979795d);
+}
+
+.containerCard{
+  width: 400px;
+  height: 320px;
+  margin-top: 150px;
+  border: 10px solid #893443;
+  border-radius: 30px;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column; 
+  margin: 10px;
+  margin-top: 150px;
+}
+
+.containerImg{
+  translate: 115px -120px;
+  position: absolute;
+  z-index:5 ;
+  
+  
+}
+
+.imgcard{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 7px solid #893443;
+}
+
+.containerTitle{
+  width: 380px;
+  height: 110px;
+  border-radius: 19px;
+  background-color: #ede288;
+  z-index: 4;
+
+}
+
+.title{
+  font-size: 32px;
+  color: #893443;
+  translate: 0px 30px;
+}
+
+.containerInfoGeneral{
+  background: #856888;
+  width: 380px;
+  height: 220px;
+  
+  border-radius: 19px;
+  
+}
+
+.containerInfo{
+  width: 380px;
+  height: 221px;
+  background-color: #C9BEDC;
+  border-radius: 0px 0px 19px 19px ;
+  display: flex;
+  border-bottom-right-radius: 280px;
+  border-bottom-left-radius: 20px;
+  
+}
+
+.containerInfo1{
+  display: inline;
+  align-content:stretch;
+  color:#893443;
+  text-align: left;
+  
+}
+
+.containerInfo2{
+  display: inline;
+  align-content:stretch;
+  color: white;
+  text-align: left;
+  
 }
 
