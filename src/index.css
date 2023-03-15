@@ -8,19 +8,22 @@
 body {
   font-family: 'Lato', sans-serif;
   font-family: 'Nunito Sans', sans-serif;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: url("/img/Desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
+  overflow-x:hidden
 }
 
 .spinner {
-  position: relative;
-  width: 35.2px;
-  height: 35.2px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 /*NavBar*/
@@ -64,6 +67,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .container-location{
@@ -76,11 +80,17 @@ body {
 /*container residents*/
 
 .container-character{
-  margin-top: 100px;
-  
+  margin-top: 100px; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  align-items: center;
+  justify-content: center;
 }
 
 /*card-residents*/
+
+
 
 .card{
   height: 320px;
@@ -151,7 +161,7 @@ position: relative;
 .container-descrptions{
   color: white; 
   width: 190px;
-  transform: translate(30px, 0px);
+  transform: translate(20px, 0px);
 }
 
 .container-color{
@@ -170,4 +180,8 @@ position: relative;
   border-radius: 30px;
   width: 150px;
   transform: translate(0px, -25px);
+}
+
+.overflow{
+  overflow: hidden;
 }

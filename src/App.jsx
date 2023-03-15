@@ -7,7 +7,7 @@ import axios from "axios";
 import "./App.css";
 
 function App() {
-  const [loader, setLoader] = useState(true)
+  const [loader, setLoader] = useState(true);
   const [location, setLocation] = useState({});
   useEffect(() => {
     axios
@@ -16,19 +16,18 @@ function App() {
           Math.random() * 127
         )}`
       )
-      .then((resp) => 
-      {
-        setTimeout(() => {setLoader(false); }, 2000);
-        setLocation(resp.data)
+      .then((resp) => {
+        setLocation(resp.data);
+        setTimeout(() => {
+          setLoader(false);
+        }, 5000);
       })
       .catch((error) => console.error(error));
   }, []);
 
   return (
-    <div className="App">
-      {
-        loader && <Loader/>
-      }
+    <div className="App ">
+      {loader && <Loader />}
       <NavBar />
       <Input setLocation={setLocation} />
       <Location dataLocation={location} />
