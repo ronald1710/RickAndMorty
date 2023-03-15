@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import NavBar from "./componets/NavBar";
 import Location from "./componets/Location";
-import Input from "./componets/input";
+import Input from "./componets/Input";
 import Loader from "./componets/Loader";
 import axios from "axios";
 import "./App.css";
