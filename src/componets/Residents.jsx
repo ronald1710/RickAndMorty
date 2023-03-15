@@ -2,33 +2,44 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const Residents = ({resident}) => {
- const [character, setCharacter] = useState ({})
- useEffect (()=>{
-  axios
+  const [character, setCharacter] = useState ({})
+  useEffect (()=>{
+    axios
     .get(resident)
     .then((resp)=>{setCharacter(resp.data)})
     .catch(error=>console.error(error))
- },[])
-
+  },[])
+  
   return (
-
- <div>
-        <img src={character?.image} alt={character?.name} />
-        <h3>{character?.name}</h3>
-        <div>
-          <div>
-            <h3>RAZA</h3>
-            <h3>ORIGEN</h3>
-            <h3>APARICIONES</h3>
-          </div>
-          <div>
-            <h3>{character?.species}</h3>
-            <h3>{character?.origin?.name}</h3>
-            <h3>{character?.episode?.length}</h3>
-          </div>
-          <span>{character?.status}</span>
+    
+    
+    
+    <div>
+    <div className="card bg-transparent">
+  <span className="status text-center">{character?.status}</span>
+  <div className="container-img">
+      <img src={character?.image} className="card-img-top" alt={character?.name} />   
+      </div>
+      <div className="card-body">
+        <div className="container-title">
+        <h5 className="card-title text-center">{character?.name}</h5>
         </div>
-      </div> 
+        <div className="container-info">
+          <div className="container-items">
+            <p>RAZA</p>
+            <p>ORIGEN</p>
+            <p>APARICIONES</p>
+          </div>
+          <div className="container-descrptions">
+            <p>{character?.species}</p>
+            <p>{character?.origin?.name}</p>
+            <p>{character?.episode?.length}</p>
+          </div>
+        </div>
+        <div className="container-color"></div>
+     </div>
+    </div>
+    </div>
 
     );
 }

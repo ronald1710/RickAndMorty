@@ -19,7 +19,7 @@ const Input = ({setLocation}) => {
 
   return ( 
 
-    <form onSubmit={handleSubmit} className="container form">
+    <form onSubmit={handleSubmit} className="form">
         <input 
         className="input"
         type="text" 
