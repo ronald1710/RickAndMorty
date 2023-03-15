@@ -1,21 +1,38 @@
-import { useState } from 'react'
-import Card from './componets/Card'
+import { useState, useEffect } from 'react'
 import NavBar from './componets/NavBar'
+import Location from './componets/Location'
+import Input from './componets/input';
+import axios from "axios";
 import './App.css'
 
 function App() {
-  
+  const [location, setLocation] = useState( {} )
+useEffect ( () => {
+  axios
+      .get (`https://rickandmortyapi.com/api/location/${Math.floor(Math.random()*127)}`)
+      .then(resp=>setLocation(resp.data))
+      .catch(error=>console.error(error))
+}, [] )
+
+
+
 
   return (
     <div className="App">
     <NavBar/>
-    
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
+    <Input
+    setLocation = {setLocation}
+    />
+    <Location
+    dataLocation = {location}
+    />
 
+
+
+
+
+    
+    
     </div>
   )
 }

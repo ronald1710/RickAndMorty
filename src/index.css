@@ -17,104 +17,42 @@ body {
   background-attachment: fixed;
 
 }
+/*NavBar*/
 
-.Navbar{
-  background: rgba(0,0,0,0.9);
-  width: 100%;
-  position: fixed;
- 
+.logo{
+ transform: rotate(-28deg);
 }
 
-.container-inputs{
-  position: fixed;
-  top: 50px;
-  right: 15px;
+/*form(input)*/
+
+.form{
+  margin-right: 30px;
 }
 
-.logo {
- 
-  top: 50px;
-  left: 15px;
-  rotate: -25deg;
-  box-shadow: 100px, 100px, 10px, rgba(#7979795d);
+.input{
+  width: 277px;
+  height: 40px;
+  border: 5px solid #893446;
+  border-radius: 25px;
 }
 
-.containerCard{
-  width: 400px;
-  height: 320px;
-  margin-top: 150px;
-  border: 10px solid #893443;
-  border-radius: 30px;
-  position: relative;
-  display: inline-flex;
-  flex-direction: column; 
-  margin: 10px;
-  margin-top: 150px;
+.button{
+  color: #893446;
+  width: 177px;
+  background: #feef66;
+  font-size: 20px;
+  border: 5px solid #893446;
+  border-radius: 25px;
+  translate: -30px 0px;
 }
 
-.containerImg{
-  translate: 115px -120px;
-  position: absolute;
-  z-index:5 ;
-  
-  
-}
+/*container-location*/
 
-.imgcard{
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  border: 7px solid #893443;
-}
-
-.containerTitle{
-  width: 380px;
-  height: 110px;
-  border-radius: 19px;
-  background-color: #ede288;
-  z-index: 4;
-
-}
-
-.title{
-  font-size: 32px;
-  color: #893443;
-  translate: 0px 30px;
-}
-
-.containerInfoGeneral{
-  background: #856888;
-  width: 380px;
-  height: 220px;
-  
-  border-radius: 19px;
-  
-}
-
-.containerInfo{
-  width: 380px;
-  height: 221px;
-  background-color: #C9BEDC;
-  border-radius: 0px 0px 19px 19px ;
+.container-location{
+  background-color: rgba(255, 255, 255, 0.322);
+  margin-top: 20px;
+  border: 5px solid #893446;
+  border-radius: 25px;
   display: flex;
-  border-bottom-right-radius: 280px;
-  border-bottom-left-radius: 20px;
-  
-}
-
-.containerInfo1{
-  display: inline;
-  align-content:stretch;
-  color:#893443;
-  text-align: left;
-  
-}
-
-.containerInfo2{
-  display: inline;
-  align-content:stretch;
-  color: white;
-  text-align: left;
-  
 }
 
